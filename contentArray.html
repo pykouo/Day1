@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Content by Array</title>
+	<style>
+		div{
+			display: block;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		var content = ['AAAAAAAAAAAAAAAAAAAAA','BBBBBBB','BBBBBBBBB','CCCCCC','CCCCCCCCCCC','DDDDD','DDDDDDDDD','d']
+		var c_num = content.length;
+		console.log(c_num);
+		for (var i =0; i< c_num; i++) {
+			$('body').find('.QAO').append('<div>'+content[i]+'</div>');
+		}	
+	});
+	</script>
+</head>
+<body>
+	<div class="QAO"></div>
+</body>
+</html>
